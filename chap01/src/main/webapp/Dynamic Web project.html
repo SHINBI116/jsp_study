@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Dynamic Web Project.html</title>
+	<link rel="stylesheet" href="./css/basic.css" />
+	
+</head>
+<body>
+	
+	<h3>1. Eclipse for Web Developers 설치</h3>
+	
+	<ul>
+		<li>웹 개발자용 버전(용량 더 큰것)으로 설치</li>
+		<li>File - New를 했을 때 Dynamic Web Project가 보여야 한다</li>
+		<li>
+			만약 제대로 설치했는데도 Dynamic Web Project가 안보인다면
+			오른쪽 맨위의 Open Perspective를 눌러 Java EE로 설정한다
+		</li>
+	</ul>
+	
+	<h3>2. Apache Tomcat 설치 (Web Application Server)</h3>
+	
+	<ul>
+		<li>웹 서버는 기본적으로 정적인 자원(.html, .jpg, .txt)만 서비스하는 프로그램을 의미한다</li>
+		<li>Web Application Server는 웹 서버에 동적 자원을 서비스하는 기능
+			(프로그래밍 언어로 제작된 서버 페이지 해석 기능)이 추가된 서버를 의미한다</li>
+		<li>설치 할 때는 9.0 버전으로 설치 (10.0이상은 oracle jdk와 호환되지 않음)</li>
+		<li>압축 해제 후 Dynamic Web Project 생성시 target runtime에 등록</li>
+		<li>Servers에도 설치한 Apache Tomcat을 등록</li>
+		<li>Project Explorer에 있는 Servers의 server.xml에서도 포트번호를 설정할 수 있다</li>
+	</ul>
+	
+	<h3>3. 새 프로젝트 생성하기</h3>
+	
+	<ul>
+		<li>File - New - Dynamic Web Project</li>
+		<li>Target runtime 설정하기 (Tomcat 버전 및 설치 위치)</li>
+		<li>Next 두 번 눌러서 Generate web.xml을 체크 후 프로젝트 생성
+		(web.xml을 체크하고 생성 시 webapp/WEB-INF/web.xml파일이 생성됨)</li>
+	</ul>
+	
+	<h4>4. 만든 프로젝트 등록 및 접속하기</h4>
+	
+	<ul>
+		<li>Servers에 등록된 서버를 우클릭 후 Add and Remove하여 프로젝트를 등록</li>
+		<li>서버 우클릭 후 Start (접속하기 위해서는 콘솔에 서버가 실행중이어야 함)</li>
+		<li>서버로 접속하기 위해서는 웹 브라우저를 켜서 주소를 입력해야함
+		(https://내IP주소:포트번호/프로젝트명/해당파일의webapp및경로)</li>
+		<li>Ctrl + F11 
+		(서버를 켜고, 웹 브라우저도 켠 후 현재 웹 페이지를 보기위한 주소를 웹 브라우저에 자동으로 입력해줌)</li>
+	</ul>
+	
+</body>
+</html>
